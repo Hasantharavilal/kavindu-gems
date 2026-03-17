@@ -1,0 +1,59 @@
+/* assets/css/style.css */
+body {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #0a0a0a; 
+}
+::-webkit-scrollbar-thumb {
+    background: #D4AF37; 
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #F3E5AB; 
+}
+
+/* Animations */
+@keyframes slowZoom {
+    0% { transform: scale(1.05); }
+    100% { transform: scale(1.15); }
+}
+.animate-slow-zoom {
+    animation: slowZoom 20s infinite alternate linear;
+}
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+.fade-in.visible {
+    opacity: 1;
+}
+
+/* Glowing text effect for special headers */
+.text-glow {
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+}
+
+/* Glassmorphism for forms and cards */
+.glass-panel {
+    background: rgba(42, 42, 42, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}

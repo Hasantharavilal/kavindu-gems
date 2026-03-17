@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Kavindu Gems</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: { DEFAULT: '#D4AF37', light: '#F3E5AB', dark: '#AA8529' },
+                        dark: { DEFAULT: '#0a0a0a', light: '#1a1a1a' }
+                    },
+                    fontFamily: { serif: ['"Playfair Display"', 'serif'], sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-dark text-white antialiased overflow-x-hidden">
+    
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-dark/90 backdrop-blur-md border-b border-gray-800 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="font-serif text-2xl font-bold tracking-wider text-gold">KAVINDU<span class="text-white"> GEMS</span></a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-300 hover:text-gold transition-colors font-medium">Home</a>
+                    <a href="shop.html" class="text-gray-300 hover:text-gold transition-colors font-medium">Shop</a>
+                    <a href="about.html" class="text-gray-300 hover:text-gold transition-colors font-medium">About</a>
+                    <a href="contact.html" class="text-gold border-b-2 border-gold pb-1 font-medium transition-colors">Contact</a>
+                    <a href="shop.html" class="bg-gold text-dark px-6 py-2 rounded-full font-medium hover:bg-gold-light transition duration-300 transform hover:scale-105">
+                        <i class="fas fa-shopping-cart mr-2"></i>Cart
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-300 hover:text-white" id="mobile-menu-btn">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-dark-light absolute w-full" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-300 hover:text-gold block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="shop.html" class="text-gray-300 hover:text-gold block px-3 py-2 rounded-md text-base font-medium">Shop</a>
+                <a href="about.html" class="text-gray-300 hover:text-gold block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="contact.html" class="text-gold block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="pt-32 pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-up">
+                <h1 class="text-5xl font-serif font-bold text-white mb-4">Get In Touch</h1>
+                <p class="text-gray-400 max-w-2xl mx-auto">Looking for a specific gem? Have questions about our certificates or shipping? We're here to assist you in finding your perfect stone.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Info -->
+                <div class="fade-in-up" style="animation-delay: 0.2s">
+                    <div class="glass-panel p-8 rounded-2xl h-full">
+                        <h3 class="text-2xl font-serif text-white mb-8 border-b border-gray-700 pb-4">Our Store Information</h3>
+                        
+                        <div class="space-y-8">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-dark rounded-full flex justify-center items-center border border-gold/30 text-gold text-xl mr-6 flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-gold font-semibold mb-1">Visit Us</h4>
+                                    <p class="text-gray-400 leading-relaxed">Monaragala, <br>Sri Lanka</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-dark rounded-full flex justify-center items-center border border-gold/30 text-gold text-xl mr-6 flex-shrink-0">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-gold font-semibold mb-1">Email Us</h4>
+                                    <p class="text-gray-400">kavindunimsara1212@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-dark rounded-full flex justify-center items-center border border-gold/30 text-gold text-xl mr-6 flex-shrink-0">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-gold font-semibold mb-1">Call Us</h4>
+                                    <p class="text-gray-400">Main: +94722269502 <br>WhatsApp: +94722269502</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-10 border-t border-gray-700 pt-8">
+                            <h4 class="text-white font-serif mb-4">Follow Our Journey</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 h-10 rounded-full bg-dark flex justify-center items-center text-gray-400 border border-gray-700 hover:border-gold hover:text-gold transition"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-dark flex justify-center items-center text-gray-400 border border-gray-700 hover:border-gold hover:text-gold transition"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="fade-in-up" style="animation-delay: 0.4s">
+                    <form class="glass-panel p-8 rounded-2xl h-full flex flex-col justify-center" onsubmit="event.preventDefault(); alert('Inquiry Sent! Kavindu will get back to you soon.');">
+                        <div class="mb-6">
+                            <label class="block text-gray-300 text-sm font-semibold mb-2" for="name">Your Name</label>
+                            <input class="w-full bg-dark/50 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-gold transition" id="name" type="text" placeholder="John Doe" required>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-300 text-sm font-semibold mb-2" for="email">Email Address</label>
+                            <input class="w-full bg-dark/50 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-gold transition" id="email" type="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-300 text-sm font-semibold mb-2" for="subject">Subject</label>
+                            <select class="w-full bg-dark/50 border border-gray-700 rounded-lg py-3 px-4 text-gray-300 focus:outline-none focus:border-gold transition appearance-none" id="subject">
+                                <option>General Inquiry</option>
+                                <option>Gem Sourcing Request</option>
+                                <option>Order Support</option>
+                                <option>Wholesale</option>
+                            </select>
+                        </div>
+                        <div class="mb-8">
+                            <label class="block text-gray-300 text-sm font-semibold mb-2" for="message">Message</label>
+                            <textarea class="w-full bg-dark/50 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-gold transition h-32 resize-none" id="message" placeholder="How can we help you..." required></textarea>
+                        </div>
+                        <button class="w-full bg-gold hover:bg-gold-light text-dark font-bold py-4 px-4 rounded-xl transition duration-300 transform hover:-translate-y-1 shadow-[0_0_15px_rgba(212,175,55,0.4)]">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Summary -->
+    <footer class="bg-dark border-t border-gray-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h4 class="font-serif text-xl tracking-wider text-gold mb-2">KAVINDU GEMS</h4>
+            <p class="text-gray-500 text-sm">© 2026 Kavindu Gems. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

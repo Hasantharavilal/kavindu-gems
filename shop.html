@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Kavindu Gems</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: { DEFAULT: '#D4AF37', light: '#F3E5AB', dark: '#AA8529' },
+                        dark: { DEFAULT: '#0a0a0a', light: '#1a1a1a' }
+                    },
+                    fontFamily: { serif: ['"Playfair Display"', 'serif'], sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-dark text-white antialiased overflow-x-hidden">
+    
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-dark/90 backdrop-blur-md border-b border-gray-800 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="font-serif text-2xl font-bold tracking-wider text-gold">KAVINDU<span class="text-white"> GEMS</span></a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-300 hover:text-gold transition-colors font-medium">Home</a>
+                    <a href="shop.html" class="text-gold border-b-2 border-gold pb-1 font-medium transition-colors">Shop</a>
+                    <a href="about.html" class="text-gray-300 hover:text-gold transition-colors font-medium">About</a>
+                    <a href="contact.html" class="text-gray-300 hover:text-gold transition-colors font-medium">Contact</a>
+                    <a href="#" class="bg-gold text-dark px-6 py-2 rounded-full font-medium hover:bg-gold-light transition duration-300 transform hover:scale-105">
+                        <i class="fas fa-shopping-cart mr-2"></i>Cart
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-300 hover:text-white" id="mobile-menu-btn">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-dark-light absolute w-full" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-300 hover:text-gold block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="shop.html" class="text-gold block px-3 py-2 rounded-md text-base font-medium">Shop</a>
+                <a href="about.html" class="text-gray-300 hover:text-gold block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="contact.html" class="text-gray-300 hover:text-gold block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="pt-32 pb-16 bg-dark-light border-b border-gray-800 text-center">
+        <h1 class="text-5xl font-serif font-bold text-white mb-4 slide-in">Our Collection</h1>
+        <p class="text-gray-400 max-w-2xl mx-auto px-4 fade-in-up visible">Browse our exquisite selection of rare and precious gemstones. Each stone includes a certificate of authenticity.</p>
+    </div>
+
+    <!-- Shop Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        
+        <!-- Filters (Visual only for demonstration) -->
+        <div class="flex flex-wrap gap-4 mb-12 justify-center fade-in-up visible">
+            <button class="px-6 py-2 rounded-full border border-gold text-gold bg-transparent hover:bg-gold hover:text-dark transition">All Gems</button>
+            <button class="px-6 py-2 rounded-full border border-gray-600 text-gray-300 hover:border-gold hover:text-gold transition">Sapphires</button>
+            <button class="px-6 py-2 rounded-full border border-gray-600 text-gray-300 hover:border-gold hover:text-gold transition">Rubies</button>
+            <button class="px-6 py-2 rounded-full border border-gray-600 text-gray-300 hover:border-gold hover:text-gold transition">Emeralds</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Product 1 -->
+            <div class="group relative overflow-hidden rounded-2xl glass-panel hover:border-gold/50 transition duration-500 fade-in-up">
+                <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-black flex justify-center items-center h-64">
+                    <img src="assets/images/sapphire.png" alt="Ceylon Blue Sapphire" class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="absolute top-4 right-4 bg-dark/80 backdrop-blur px-3 py-1 rounded-full border border-gold/30">
+                    <span class="text-gold text-sm font-semibold">Premium</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-serif text-white mb-2 group-hover:text-gold transition">Ceylon Blue Sapphire</h3>
+                    <p class="text-gray-400 text-sm mb-4">4.2 Carats • Unheated • Cornflower Blue. Known for its mesmerizing blue hue, perfect for engagement rings.</p>
+                    <div class="flex justify-between items-center mt-4 border-t border-gray-800 pt-4">
+                        <span class="text-xl font-bold text-white">$4,500</span>
+                        <button onclick="addToCart('Ceylon Blue Sapphire', '$4,500')" class="bg-gold text-dark px-4 py-2 rounded font-medium hover:bg-gold-light transition duration-300 transform hover:scale-105">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="group relative overflow-hidden rounded-2xl glass-panel hover:border-gold/50 transition duration-500 fade-in-up">
+                <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-black flex justify-center items-center h-64">
+                    <img src="assets/images/ruby.png" alt="Pigeon Blood Ruby" class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-serif text-white mb-2 group-hover:text-gold transition">Pigeon Blood Ruby</h3>
+                    <p class="text-gray-400 text-sm mb-4">3.1 Carats • Heat Only • Vivid Red. A breathtakingly vibrant ruby with unmatched clarity and brilliance.</p>
+                    <div class="flex justify-between items-center mt-4 border-t border-gray-800 pt-4">
+                        <span class="text-xl font-bold text-white">$6,200</span>
+                        <button onclick="addToCart('Pigeon Blood Ruby', '$6,200')" class="bg-gold text-dark px-4 py-2 rounded font-medium hover:bg-gold-light transition duration-300 transform hover:scale-105">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="group relative overflow-hidden rounded-2xl glass-panel hover:border-gold/50 transition duration-500 fade-in-up">
+                <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-black flex justify-center items-center h-64">
+                    <img src="https://images.unsplash.com/photo-1615655114865-4cc1bda5901e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Zambian Emerald" class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-serif text-white mb-2 group-hover:text-gold transition">Zambian Emerald</h3>
+                    <p class="text-gray-400 text-sm mb-4">2.8 Carats • Minor Oil • Vivid Green. Stunning deep green tones symbolizing rebirth and pure love.</p>
+                    <div class="flex justify-between items-center mt-4 border-t border-gray-800 pt-4">
+                        <span class="text-xl font-bold text-white">$3,800</span>
+                        <button onclick="addToCart('Zambian Emerald', '$3,800')" class="bg-gold text-dark px-4 py-2 rounded font-medium hover:bg-gold-light transition duration-300 transform hover:scale-105">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="group relative overflow-hidden rounded-2xl glass-panel hover:border-gold/50 transition duration-500 fade-in-up">
+                <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-black flex justify-center items-center h-64">
+                    <img src="https://images.unsplash.com/photo-1599643478524-fb66f70a92f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800" alt="Padparadscha Sapphire" class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="absolute top-4 right-4 bg-dark/80 backdrop-blur px-3 py-1 rounded-full border border-gold/30">
+                    <span class="text-gold text-sm font-semibold">Exquisite</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-serif text-white mb-2 group-hover:text-gold transition">Padparadscha Sapphire</h3>
+                    <p class="text-gray-400 text-sm mb-4">2.1 Carats • Unheated • Pink-Orange. The rarest of sapphires, carrying the colors of a tropical sunset.</p>
+                    <div class="flex justify-between items-center mt-4 border-t border-gray-800 pt-4">
+                        <span class="text-xl font-bold text-white">$8,500</span>
+                        <button onclick="addToCart('Padparadscha Sapphire', '$8,500')" class="bg-gold text-dark px-4 py-2 rounded font-medium hover:bg-gold-light transition duration-300 transform hover:scale-105">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="group relative overflow-hidden rounded-2xl glass-panel hover:border-gold/50 transition duration-500 fade-in-up">
+                <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-black flex justify-center items-center h-64">
+                    <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800" alt="Yellow Sapphire" class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-serif text-white mb-2 group-hover:text-gold transition">Yellow Sapphire</h3>
+                    <p class="text-gray-400 text-sm mb-4">5.5 Carats • Unheated • Lemon Yellow. Symbolizes wealth and prosperity, bringing a brilliant glow.</p>
+                    <div class="flex justify-between items-center mt-4 border-t border-gray-800 pt-4">
+                        <span class="text-xl font-bold text-white">$2,100</span>
+                        <button onclick="addToCart('Yellow Sapphire', '$2,100')" class="bg-gold text-dark px-4 py-2 rounded font-medium hover:bg-gold-light transition duration-300 transform hover:scale-105">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 6 -->
+            <div class="group relative overflow-hidden rounded-2xl glass-panel hover:border-gold/50 transition duration-500 fade-in-up">
+                <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-black flex justify-center items-center h-64">
+                    <img src="https://images.unsplash.com/photo-1596704017254-9b87b7de7d64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800" alt="Amethyst Quartz" class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-serif text-white mb-2 group-hover:text-gold transition">Royal Amethyst</h3>
+                    <p class="text-gray-400 text-sm mb-4">8.2 Carats • Natural • Deep Purple. Offers striking purple hues, ideal for large statement jewelry.</p>
+                    <div class="flex justify-between items-center mt-4 border-t border-gray-800 pt-4">
+                        <span class="text-xl font-bold text-white">$850</span>
+                        <button onclick="addToCart('Royal Amethyst', '$850')" class="bg-gold text-dark px-4 py-2 rounded font-medium hover:bg-gold-light transition duration-300 transform hover:scale-105">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="group relative overflow-hidden rounded-2xl glass-panel hover:border-gold/50 transition duration-500 fade-in-up">
+                <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-black flex justify-center items-center h-64">
+                    <img src="https://images.unsplash.com/photo-1579737976192-127e997ca5f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800" alt="Aquamarine" class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-serif text-white mb-2 group-hover:text-gold transition">Ocean Aquamarine</h3>
+                    <p class="text-gray-400 text-sm mb-4">4.8 Carats • Natural • Light Blue. Clear as tropical waters, an elegantly subtle choice.</p>
+                    <div class="flex justify-between items-center mt-4 border-t border-gray-800 pt-4">
+                        <span class="text-xl font-bold text-white">$1,200</span>
+                        <button onclick="addToCart('Ocean Aquamarine', '$1,200')" class="bg-gold text-dark px-4 py-2 rounded font-medium hover:bg-gold-light transition duration-300 transform hover:scale-105">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="group relative overflow-hidden rounded-2xl glass-panel hover:border-gold/50 transition duration-500 fade-in-up">
+                <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-black flex justify-center items-center h-64">
+                    <img src="https://images.unsplash.com/photo-1615655406736-b3e8bf02ab7c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800" alt="Tsavorite Garnet" class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-serif text-white mb-2 group-hover:text-gold transition">Tsavorite Garnet</h3>
+                    <p class="text-gray-400 text-sm mb-4">2.4 Carats • Untreated • Vivid Green. A rare and brilliant alternative to emeralds.</p>
+                    <div class="flex justify-between items-center mt-4 border-t border-gray-800 pt-4">
+                        <span class="text-xl font-bold text-white">$2,500</span>
+                        <button onclick="addToCart('Tsavorite Garnet', '$2,500')" class="bg-gold text-dark px-4 py-2 rounded font-medium hover:bg-gold-light transition duration-300 transform hover:scale-105">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="group relative overflow-hidden rounded-2xl glass-panel hover:border-gold/50 transition duration-500 fade-in-up">
+                <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-black flex justify-center items-center h-64">
+                    <img src="https://images.unsplash.com/photo-1605151522207-6ba320e6ca7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800" alt="Imperial Topaz" class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-serif text-white mb-2 group-hover:text-gold transition">Imperial Topaz</h3>
+                    <p class="text-gray-400 text-sm mb-4">6.0 Carats • Natural • Golden Orange. A highly prized variant with magnificent fire inside.</p>
+                    <div class="flex justify-between items-center mt-4 border-t border-gray-800 pt-4">
+                        <span class="text-xl font-bold text-white">$1,800</span>
+                        <button onclick="addToCart('Imperial Topaz', '$1,800')" class="bg-gold text-dark px-4 py-2 rounded font-medium hover:bg-gold-light transition duration-300 transform hover:scale-105">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="group relative overflow-hidden rounded-2xl glass-panel hover:border-gold/50 transition duration-500 fade-in-up">
+                <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-black flex justify-center items-center h-64">
+                    <img src="https://images.unsplash.com/photo-1588636402434-22b9c3aaba74?ixlib=rb-4.0.3&auto=format&fit=crop&w=800" alt="Pink Sapphire" class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="absolute top-4 right-4 bg-dark/80 backdrop-blur px-3 py-1 rounded-full border border-gold/30">
+                    <span class="text-gold text-sm font-semibold">Popular</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-serif text-white mb-2 group-hover:text-gold transition">Pink Sapphire</h3>
+                    <p class="text-gray-400 text-sm mb-4">3.5 Carats • Heat Only • Vivid Pink. Feminine and romantic, offering exceptional durability.</p>
+                    <div class="flex justify-between items-center mt-4 border-t border-gray-800 pt-4">
+                        <span class="text-xl font-bold text-white">$2,900</span>
+                        <button onclick="addToCart('Pink Sapphire', '$2,900')" class="bg-gold text-dark px-4 py-2 rounded font-medium hover:bg-gold-light transition duration-300 transform hover:scale-105">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 11 -->
+            <div class="group relative overflow-hidden rounded-2xl glass-panel hover:border-gold/50 transition duration-500 fade-in-up">
+                <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-black flex justify-center items-center h-64">
+                    <img src="https://images.unsplash.com/photo-1600003014768-4f8102602162?ixlib=rb-4.0.3&auto=format&fit=crop&w=800" alt="Red Spinel" class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-serif text-white mb-2 group-hover:text-gold transition">Burmese Red Spinel</h3>
+                    <p class="text-gray-400 text-sm mb-4">2.2 Carats • Unheated • Intense Red. Historically mistaken for ruby, it boasts incredible sparkle.</p>
+                    <div class="flex justify-between items-center mt-4 border-t border-gray-800 pt-4">
+                        <span class="text-xl font-bold text-white">$1,600</span>
+                        <button onclick="addToCart('Burmese Red Spinel', '$1,600')" class="bg-gold text-dark px-4 py-2 rounded font-medium hover:bg-gold-light transition duration-300 transform hover:scale-105">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 12 -->
+            <div class="group relative overflow-hidden rounded-2xl glass-panel hover:border-gold/50 transition duration-500 fade-in-up">
+                <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-black flex justify-center items-center h-64">
+                    <img src="https://images.unsplash.com/photo-1579410191834-08f31998ecff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800" alt="Citrine" class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-serif text-white mb-2 group-hover:text-gold transition">Golden Citrine</h3>
+                    <p class="text-gray-400 text-sm mb-4">12.5 Carats • Natural • Golden Yellow. A beautiful, large center stone perfect for pendants.</p>
+                    <div class="flex justify-between items-center mt-4 border-t border-gray-800 pt-4">
+                        <span class="text-xl font-bold text-white">$450</span>
+                        <button onclick="addToCart('Golden Citrine', '$450')" class="bg-gold text-dark px-4 py-2 rounded font-medium hover:bg-gold-light transition duration-300 transform hover:scale-105">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 13 -->
+            <div class="group relative overflow-hidden rounded-2xl glass-panel hover:border-gold/50 transition duration-500 fade-in-up">
+                <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-black flex justify-center items-center h-64">
+                    <img src="https://images.unsplash.com/photo-1591076296720-d667c3ec1e21?ixlib=rb-4.0.3&auto=format&fit=crop&w=800" alt="White Sapphire" class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-serif text-white mb-2 group-hover:text-gold transition">White Sapphire</h3>
+                    <p class="text-gray-400 text-sm mb-4">3.8 Carats • Unheated • Colorless. A brilliant, natural alternative to diamonds.</p>
+                    <div class="flex justify-between items-center mt-4 border-t border-gray-800 pt-4">
+                        <span class="text-xl font-bold text-white">$1,100</span>
+                        <button onclick="addToCart('White Sapphire', '$1,100')" class="bg-gold text-dark px-4 py-2 rounded font-medium hover:bg-gold-light transition duration-300 transform hover:scale-105">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 14 -->
+            <div class="group relative overflow-hidden rounded-2xl glass-panel hover:border-gold/50 transition duration-500 fade-in-up">
+                <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-black flex justify-center items-center h-64">
+                    <img src="https://images.unsplash.com/photo-1610018519614-2508933b9340?ixlib=rb-4.0.3&auto=format&fit=crop&w=800" alt="Tanzanite" class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-serif text-white mb-2 group-hover:text-gold transition">Vivid Tanzanite</h3>
+                    <p class="text-gray-400 text-sm mb-4">4.0 Carats • Heat Only • Violet-Blue. Only found in Tanzania, radiating exotic elegance.</p>
+                    <div class="flex justify-between items-center mt-4 border-t border-gray-800 pt-4">
+                        <span class="text-xl font-bold text-white">$3,200</span>
+                        <button onclick="addToCart('Vivid Tanzanite', '$3,200')" class="bg-gold text-dark px-4 py-2 rounded font-medium hover:bg-gold-light transition duration-300 transform hover:scale-105">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 15 -->
+            <div class="group relative overflow-hidden rounded-2xl glass-panel hover:border-gold/50 transition duration-500 fade-in-up">
+                <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-black flex justify-center items-center h-64">
+                    <img src="https://images.unsplash.com/photo-1644329241517-91b40de9dbca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800" alt="Alexandrite" class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="absolute top-4 right-4 bg-dark/80 backdrop-blur px-3 py-1 rounded-full border border-gold/30">
+                    <span class="text-gold text-sm font-semibold">Rare!</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-serif text-white mb-2 group-hover:text-gold transition">Alexandrite</h3>
+                    <p class="text-gray-400 text-sm mb-4">1.2 Carats • Unheated • Color-Changing. Magical stone that shifts from green in daylight to red under incandescent light.</p>
+                    <div class="flex justify-between items-center mt-4 border-t border-gray-800 pt-4">
+                        <span class="text-xl font-bold text-white">$6,500</span>
+                        <button onclick="addToCart('Alexandrite', '$6,500')" class="bg-gold text-dark px-4 py-2 rounded font-medium hover:bg-gold-light transition duration-300 transform hover:scale-105">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer Summary (Keep it similar to index) -->
+    <footer class="bg-dark border-t border-gray-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h4 class="font-serif text-xl tracking-wider text-gold mb-2">KAVINDU GEMS</h4>
+            <p class="text-gray-500 text-sm">© 2026 Kavindu Gems. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
